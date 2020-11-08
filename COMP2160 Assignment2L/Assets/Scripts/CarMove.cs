@@ -7,8 +7,8 @@ public class CarMove : MonoBehaviour
 
     public Rigidbody theRB;
 
-    public float forwardAccel = 0.1f;
-    public float reverseAccel = 0.1f;
+    public float forwardAccel = 8f;
+    public float reverseAccel = 8f;
     public float maxSpeed = 50f;
     public float turnStrength = 180f;
     public float gravityForce = 10f;
