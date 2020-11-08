@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 773244548}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3125,8 +3125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2119470602}
   - component: {fileID: 2119470604}
+  - component: {fileID: 2119470606}
   - component: {fileID: 2119470603}
-  - component: {fileID: 2119470605}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3199,7 +3199,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &2119470605
+--- !u!114 &2119470606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3208,10 +3208,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119470601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adecc071ae8cca345ac7da28b32e79f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b2b5561666a6fe4e8a93d40305a1d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 370659395}
-  speed: 0.123
-  offset: {x: 0, y: -0.5, z: -5}
-  lookTarget: {fileID: 0}
+  distanceAway: 5
+  distanceUp: 1.3
+  smooth: 2
