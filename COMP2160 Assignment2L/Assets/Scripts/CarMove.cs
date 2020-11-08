@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarMove : MonoBehaviour
 {
+
     public Rigidbody theRB;
 
     public float forwardAccel = 0.1f;
@@ -20,6 +21,8 @@ public class CarMove : MonoBehaviour
     public LayerMask whatIsGround;
     public float groundRayLength = 0.5f;
     public Transform groundRayPoint;
+    public GameObject deadEffect;
+    
 
     void Start()
     {
@@ -50,6 +53,7 @@ public class CarMove : MonoBehaviour
         }
 
         transform.position = theRB.transform.position;
+
     }
     private void FixedUpdate()
     {
