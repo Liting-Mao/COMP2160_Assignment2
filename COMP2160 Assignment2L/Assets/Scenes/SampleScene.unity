@@ -601,7 +601,6 @@ GameObject:
   - component: {fileID: 370659394}
   - component: {fileID: 370659393}
   - component: {fileID: 370659390}
-  - component: {fileID: 370659396}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -698,19 +697,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &370659396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370659389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202f6ee09c8c35b4e943c23d3cc3d3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthbar: {fileID: 1038904499}
 --- !u!1 &436338689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,8 +1275,9 @@ GameObject:
   m_Component:
   - component: {fileID: 773244552}
   - component: {fileID: 773244551}
-  - component: {fileID: 773244549}
   - component: {fileID: 773244548}
+  - component: {fileID: 773244550}
+  - component: {fileID: 773244549}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -1314,8 +1301,21 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &773244549
-SphereCollider:
+--- !u!114 &773244549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773244547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202f6ee09c8c35b4e943c23d3cc3d3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 1038904499}
+--- !u!65 &773244550
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1325,8 +1325,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.0405884, y: 0.8061676, z: 2.9404297}
+  m_Center: {x: 0.16036987, y: 0.036872864, z: 0.2770996}
 --- !u!33 &773244551
 MeshFilter:
   m_ObjectHideFlags: 0
