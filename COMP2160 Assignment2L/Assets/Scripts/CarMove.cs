@@ -21,7 +21,6 @@ public class CarMove : MonoBehaviour
     public LayerMask whatIsGround;
     public float groundRayLength = 0.5f;
     public Transform groundRayPoint;
-    public GameObject deadEffect;
     
 
     void Start()
