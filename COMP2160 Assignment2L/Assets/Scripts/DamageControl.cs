@@ -16,4 +16,14 @@ public class DamageControl : MonoBehaviour
             }
         }
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Checkpoint")
+        {
+            if (healthbar)
+            {
+                healthbar.restoreHealth(10);
+            }
+        }
+    }
 }

@@ -14,4 +14,10 @@ public class HealthBar : MonoBehaviour
         health = health - damage;
         healthBar.fillAmount = health / startHealth;
     }
+
+    public void restoreHealth(int heal)
+    {
+        health = health + heal;
+        healthBar.fillAmount = health / startHealth;
+    }
 }
